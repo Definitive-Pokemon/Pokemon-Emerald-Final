@@ -23,6 +23,12 @@ jobs:
               wget -qi - 
               sudo gdebi devkitpro-pacman.amd64.deb
               sudo dkp-pacman -S gba-dev
+              DEVKITPRO=/opt/devkitpro
+              DEVKITARM=/opt/devkitpro/devkitARM
+              DEVKITPPC=/opt/devkitpro/devkitPPC
+              export DEVKITPRO
+              export DEVKITARM
+              export DEVKITPPC
               git clone https://github.com/pret/pokeemerald
               git clone https://github.com/pret/agbcc
               cd ./agbcc
