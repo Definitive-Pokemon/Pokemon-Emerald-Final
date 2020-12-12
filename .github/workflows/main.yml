@@ -14,7 +14,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Build project # This would actually build your project, using zip for an example artifact
-        run: sudo apt-get install make gcc g++ make git libdev-png gdebi-core && curl -s https://api.github.com/devkitPro/pacman/releases/latest \| grep "browser_download_url*amd64.deb" \| cut -d : -f 2,3 \| tr -d \" \| wget -qi - && sudo gdebi devkitpro-pacman.amd64.deb && sudo dkp-pacman -S gba-dev && git clone https://github.com/pret/pokeemerald && git clone https://github.com/pret/agbcc && cd ./agbcc && ./build.sh && ./install.sh ../pokeemerald && cd ../pokeemerald && make
+        run: | 
+              sudo apt-get install make gcc g++ make git libdev-png gdebi-core 
+              curl -s https://api.github.com/devkitPro/pacman/releases/latest 
+              grep "browser_download_url*amd64.deb"
+              cut -d : -f 2,3 
+              tr -d \"
+              wget -qi - 
+              sudo gdebi devkitpro-pacman.amd64.deb
+              sudo dkp-pacman -S gba-dev
+              git clone https://github.com/pret/pokeemerald
+              git clone https://github.com/pret/agbcc
+              cd ./agbcc
+              ./build.sh
+              ./install.sh ../pokeemerald
+              cd ../pokeemerald
+              make
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
