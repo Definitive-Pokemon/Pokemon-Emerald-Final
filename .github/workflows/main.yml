@@ -13,8 +13,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Build project # This would actually build your project, using zip for an example artifact
-        run: | 
+        
+      - name: Cache Build Environment
+        id: cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+                /usr
+                /opt
+                /agbcc
+                /pokeemerald
+                /bin
+          key: default-cache
+
+      - name: Prepare dependencies
+        if: steps.cache-build.outputs.cache-hit != 'true'
+        run: |
               sudo apt-get install make gcc g++ make git libdev-png gdebi-core 
               curl -s https://api.github.com/devkitPro/pacman/releases/latest 
               grep "browser_download_url*amd64.deb"
@@ -35,7 +49,22 @@ jobs:
               ./build.sh
               ./install.sh ../pokeemerald
               cd ../pokeemerald
-              make
+      
+      - name: Ensure setup
+        if: steps.cache-build.outputs.cache-hit
+        run: |
+              DEVKITPRO=/opt/devkitpro
+              DEVKITARM=/opt/devkitpro/devkitARM
+              DEVKITPPC=/opt/devkitpro/devkitPPC
+              export DEVKITPRO
+              export DEVKITARM
+              export DEVKITPPC
+              cd ./pokeemerald
+              git pull https://github.com/pret/pokeemerald
+
+      - name: Build project 
+        run: make
+        
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
