@@ -33,6 +33,7 @@ jobs:
         run: |
               sudo apt update -y
               sudo apt install build-essential -y
+              sudo apt-get install libpng-dev -y
               git clone https://github.com/pret/agbcc
               cd ./agbcc
               ./build.sh
