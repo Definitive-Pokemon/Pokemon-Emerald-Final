@@ -30,11 +30,7 @@ jobs:
         if: steps.cache-build.outputs.cache-hit != 'true'
         run: |
               sudo apt-get install make gcc g++ make git libpng-dev gdebi-core 
-              curl -s https://api.github.com/devkitPro/pacman/releases/latest 
-              grep "browser_download_url*amd64.deb"
-              cut -d : -f 2,3 
-              tr -d \"
-              wget -qi - 
+              curl -L -O https://github.com/devkitPro/pacman/releases/latest/download/devkitpro-pacman.amd64.deb
               sudo gdebi devkitpro-pacman.amd64.deb
               sudo dkp-pacman -S gba-dev
               DEVKITPRO=/opt/devkitpro
