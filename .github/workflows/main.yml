@@ -31,8 +31,8 @@ jobs:
       - name: Prepare dependencies
         if: steps.cache-build.outputs.cache-hit != 'true'
         run: |
-              sudo apt update 
-              sudo apt install build-essential
+              sudo apt update -y
+              sudo apt install build-essential -y
               git clone https://github.com/pret/agbcc
               cd ./agbcc
               ./build.sh
