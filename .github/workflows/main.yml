@@ -29,7 +29,7 @@ jobs:
       - name: Prepare dependencies
         if: steps.cache-build.outputs.cache-hit != 'true'
         run: |
-              sudo apt-get install make gcc g++ make git libdev-png gdebi-core 
+              sudo apt-get install make gcc g++ make git libpng-dev gdebi-core 
               curl -s https://api.github.com/devkitPro/pacman/releases/latest 
               grep "browser_download_url*amd64.deb"
               cut -d : -f 2,3 
