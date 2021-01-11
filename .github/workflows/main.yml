@@ -10,6 +10,8 @@ jobs:
   build:
     name: Upload Release Asset
     runs-on: ubuntu-latest
+    container: devkitpro/devkitarm:latest
+    
     steps:
       - name: Cache Build Environment
         id: cache-build
@@ -29,16 +31,6 @@ jobs:
       - name: Prepare dependencies
         if: steps.cache-build.outputs.cache-hit != 'true'
         run: |
-              sudo apt-get install make gcc g++ make git libpng-dev gdebi-core 
-              curl -L -O https://github.com/devkitPro/pacman/releases/latest/download/devkitpro-pacman.amd64.deb
-              sudo gdebi -n devkitpro-pacman.amd64.deb
-              sudo dkp-pacman -q --noconfirm -S gba-dev
-              DEVKITPRO=/opt/devkitpro
-              DEVKITARM=/opt/devkitpro/devkitARM
-              DEVKITPPC=/opt/devkitpro/devkitPPC
-              export DEVKITPRO
-              export DEVKITARM
-              export DEVKITPPC
               git clone https://github.com/pret/agbcc
               cd ./agbcc
               ./build.sh
@@ -48,12 +40,6 @@ jobs:
       - name: Ensure setup
         if: steps.cache-build.outputs.cache-hit
         run: |
-              DEVKITPRO=/opt/devkitpro
-              DEVKITARM=/opt/devkitpro/devkitARM
-              DEVKITPPC=/opt/devkitpro/devkitPPC
-              export DEVKITPRO
-              export DEVKITARM
-              export DEVKITPPC
               cd ./Pokemon-Emerald-Final
 
       - name: Build project 
