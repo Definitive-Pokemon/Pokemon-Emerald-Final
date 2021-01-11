@@ -11,9 +11,6 @@ jobs:
     name: Upload Release Asset
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        
       - name: Cache Build Environment
         id: cache-build
         uses: actions/cache@v2
@@ -22,29 +19,31 @@ jobs:
                 /usr
                 /opt
                 /agbcc
-                /pokeemerald
+                /Pokemon-Emerald-Final
                 /bin
           key: default-cache
+          
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: Prepare dependencies
         if: steps.cache-build.outputs.cache-hit != 'true'
         run: |
               sudo apt-get install make gcc g++ make git libpng-dev gdebi-core 
               curl -L -O https://github.com/devkitPro/pacman/releases/latest/download/devkitpro-pacman.amd64.deb
-              sudo gdebi devkitpro-pacman.amd64.deb
-              sudo dkp-pacman -S gba-dev
+              sudo gdebi -n devkitpro-pacman.amd64.deb
+              sudo dkp-pacman -q --noconfirm -S gba-dev
               DEVKITPRO=/opt/devkitpro
               DEVKITARM=/opt/devkitpro/devkitARM
               DEVKITPPC=/opt/devkitpro/devkitPPC
               export DEVKITPRO
               export DEVKITARM
               export DEVKITPPC
-              git clone https://github.com/pret/pokeemerald
               git clone https://github.com/pret/agbcc
               cd ./agbcc
               ./build.sh
-              ./install.sh ../pokeemerald
-              cd ../pokeemerald
+              ./install.sh ../Pokemon-Emerald-Final
+              cd ../Pokemon-Emerald-Final
       
       - name: Ensure setup
         if: steps.cache-build.outputs.cache-hit
@@ -55,8 +54,7 @@ jobs:
               export DEVKITPRO
               export DEVKITARM
               export DEVKITPPC
-              cd ./pokeemerald
-              git pull https://github.com/pret/pokeemerald
+              cd ./Pokemon-Emerald-Final
 
       - name: Build project 
         run: make
@@ -81,3 +79,4 @@ jobs:
           asset_path: ./pokeemerald.gba
           asset_name: pokeemerald.gba
           asset_content_type: application
+
