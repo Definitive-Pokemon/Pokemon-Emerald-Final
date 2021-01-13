@@ -34,7 +34,7 @@ jobs:
               sudo apt update -y
               sudo apt install build-essential -y
               sudo apt-get install libpng-dev -y
-              which arm-none-eabi-gcc
+              ls /usr/bin
               echo $DEVKITPRO
               echo $DEVKITARM
               cd ..
