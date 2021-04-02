@@ -12455,7 +12455,7 @@ static const struct TrainerMonItemCustomMoves sParty_SidneyRematch1[] = {
     .lvl = 51,
     .species = SPECIES_CACTURNE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_LEECH_SEED, MOVE_THUNDERPUNCH, MOVE_NEEDLE_ARM, MOVE_SPIKES}
+    .moves = {MOVE_LEECH_SEED, MOVE_THUNDER_PUNCH, MOVE_NEEDLE_ARM, MOVE_SPIKES}
     },
     {
     .iv = 255,
@@ -12545,7 +12545,7 @@ static const struct TrainerMonItemCustomMoves sParty_GlaciaRematch1[] = {
     .lvl = 58,
     .species = SPECIES_WALREIN,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SURF, MOVE_BODY_CURSE, MOVE_ICE_BEAM, MOVE_EARTHQUAKE}
+    .moves = {MOVE_SURF, MOVE_CURSE, MOVE_ICE_BEAM, MOVE_EARTHQUAKE}
     }
 };
 
@@ -12652,7 +12652,7 @@ static const struct TrainerMonItemCustomMoves sParty_SidneyRematch2[] = {
     .lvl = 56,
     .species = SPECIES_CACTURNE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_LEECH_SEED, MOVE_THUNDERPUNCH, MOVE_NEEDLE_ARM, MOVE_SPIKES}
+    .moves = {MOVE_LEECH_SEED, MOVE_THUNDER_PUNCH, MOVE_NEEDLE_ARM, MOVE_SPIKES}
     },
     {
     .iv = 255,
@@ -12742,7 +12742,7 @@ static const struct TrainerMonItemCustomMoves sParty_GlaciaRematch2[] = {
     .lvl = 63,
     .species = SPECIES_WALREIN,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SURF, MOVE_BODY_CURSE, MOVE_ICE_BEAM, MOVE_EARTHQUAKE}
+    .moves = {MOVE_SURF, MOVE_CURSE, MOVE_ICE_BEAM, MOVE_EARTHQUAKE}
     }
 };
 
@@ -12856,7 +12856,7 @@ static const struct TrainerMonItemCustomMoves sParty_SidneyRematch3[] = {
     .lvl = 61,
     .species = SPECIES_CACTURNE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_LEECH_SEED, MOVE_THUNDERPUNCH, MOVE_NEEDLE_ARM, MOVE_SPIKES}
+    .moves = {MOVE_LEECH_SEED, MOVE_THUNDER_PUNCH, MOVE_NEEDLE_ARM, MOVE_SPIKES}
     },
     {
     .iv = 255,
@@ -12960,7 +12960,7 @@ static const struct TrainerMonItemCustomMoves sParty_GlaciaRematch3[] = {
     .lvl = 68,
     .species = SPECIES_WALREIN,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SURF, MOVE_BODY_CURSE, MOVE_ICE_BEAM, MOVE_EARTHQUAKE}
+    .moves = {MOVE_SURF, MOVE_CURSE, MOVE_ICE_BEAM, MOVE_EARTHQUAKE}
     }
 };
 
@@ -13074,7 +13074,7 @@ static const struct TrainerMonItemCustomMoves sParty_SidneyRematch4[] = {
     .lvl = 66,
     .species = SPECIES_CACTURNE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_LEECH_SEED, MOVE_THUNDERPUNCH, MOVE_NEEDLE_ARM, MOVE_SPIKES}
+    .moves = {MOVE_LEECH_SEED, MOVE_THUNDER_PUNCH, MOVE_NEEDLE_ARM, MOVE_SPIKES}
     },
     {
     .iv = 255,
@@ -13185,7 +13185,7 @@ static const struct TrainerMonItemCustomMoves sParty_GlaciaRematch4[] = {
     .lvl = 73,
     .species = SPECIES_WALREIN,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SURF, MOVE_BODY_CURSE, MOVE_ICE_BEAM, MOVE_EARTHQUAKE}
+    .moves = {MOVE_SURF, MOVE_CURSE, MOVE_ICE_BEAM, MOVE_EARTHQUAKE}
     }
 };
 
@@ -13269,7 +13269,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceRematch4[] = {
     .species = SPECIES_MILOTIC,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_RECOVER, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TOXIC}
-    }
+    },
     {
     .iv = 255,
     .lvl = 78,
