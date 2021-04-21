@@ -63,7 +63,6 @@ EverGrandeCity_DrakesRoom_EventScript_Drake_Rematch_2::
 	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_DRAKE_REMATCH_2, EverGrandeCity_DrakesRoom_Text_Defeat
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
-	setflag FLAG_DEFEATED_DRAKE_REMATCH_2
 	end
 
 EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech:: @ 822871A

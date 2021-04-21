@@ -62,7 +62,6 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia_Rematch_2::
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GLACIA_REMATCH_2, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
-	setflag FLAG_DEFEATED_GLACIA_REMATCH_2
 	end
 
 EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech:: @ 8228490

@@ -63,7 +63,6 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace_Rematch_2::
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLACE_REMATCH_2, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
-	setflag FLAG_DEFEATED_WALLACE_REMATCH_2
 	end
 
 EverGrandeCity_ChampionsRoom_EventScript_Defeated:: @ 8228A61

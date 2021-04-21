@@ -62,7 +62,6 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Rematch_2::
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_PHOEBE_REMATCH_2, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
-	setflag FLAG_DEFEATED_PHOEBE_REMATCH_2
 	end
 
 EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech:: @ 82281F2

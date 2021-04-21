@@ -68,7 +68,6 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney_Rematch_2::
 	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_SIDNEY_REMATCH_2, EverGrandeCity_SidneysRoom_Text_Defeat
 	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
-	setflag FLAG_DEFEATED_SIDNEY_REMATCH_2
 	end
 
 EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech:: @ 8227F8B
