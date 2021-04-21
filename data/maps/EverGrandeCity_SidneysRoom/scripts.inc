@@ -55,7 +55,7 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney:: @ 8227F64
 	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_SidneysRoom_EventScript_Sidney_Rematch_1
+EverGrandeCity_SidneysRoom_EventScript_Sidney_Rematch_1::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_SIDNEY_REMATCH_1, EverGrandeCity_SidneysRoom_Text_Defeat
@@ -63,7 +63,7 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney_Rematch_1
 	setflag FLAG_DEFEATED_SIDNEY_REMATCH_1
 	end
 
-EverGrandeCity_SidneysRoom_EventScript_Sidney_Rematch_2
+EverGrandeCity_SidneysRoom_EventScript_Sidney_Rematch_2::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_SIDNEY_REMATCH_2, EverGrandeCity_SidneysRoom_Text_Defeat

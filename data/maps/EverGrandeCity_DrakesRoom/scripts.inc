@@ -50,7 +50,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake:: @ 82286F3
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_DrakesRoom_EventScript_Drake_Rematch_1
+EverGrandeCity_DrakesRoom_EventScript_Drake_Rematch_1::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_DRAKE_REMATCH_1, EverGrandeCity_DrakesRoom_Text_Defeat
@@ -58,7 +58,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake_Rematch_1
 	setflag FLAG_DEFEATED_DRAKE_REMATCH_1
 	end
 
-EverGrandeCity_DrakesRoom_EventScript_Drake_Rematch_2
+EverGrandeCity_DrakesRoom_EventScript_Drake_Rematch_2::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_DRAKE_REMATCH_2, EverGrandeCity_DrakesRoom_Text_Defeat

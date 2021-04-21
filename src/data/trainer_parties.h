@@ -12419,22 +12419,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Leaf[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BrendanLinkPlaceholder[] = {
-    {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_GROUDON,
-    }
-};
-
-static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
-    {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_KYOGRE,
-    }
-};
-
 static const struct TrainerMonItemCustomMoves sParty_SidneyRematch1[] = {
     {
     .iv = 255,

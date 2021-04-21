@@ -49,7 +49,7 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe:: @ 82281CB
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Rematch_1
+EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Rematch_1::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_PHOEBE_REMATCH_1, EverGrandeCity_PhoebesRoom_Text_Defeat
@@ -57,7 +57,7 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Rematch_1
 	setflag FLAG_DEFEATED_PHOEBE_REMATCH_1
 	end
 
-EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Rematch_2
+EverGrandeCity_PhoebesRoom_EventScript_Phoebe_Rematch_2::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_PHOEBE_REMATCH_2, EverGrandeCity_PhoebesRoom_Text_Defeat

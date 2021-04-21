@@ -50,7 +50,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace:: @ 8228A45
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_ChampionsRoom_EventScript_Wallace_Rematch_1
+EverGrandeCity_ChampionsRoom_EventScript_Wallace_Rematch_1::
 	playbgm MUS_ENCOUNTER_CHAMPION, 0
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLACE_REMATCH_1, EverGrandeCity_ChampionsRoom_Text_Defeat
@@ -58,7 +58,7 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace_Rematch_1
 	setflag FLAG_DEFEATED_WALLACE_REMATCH_1
 	end
 
-EverGrandeCity_ChampionsRoom_EventScript_Wallace_Rematch_2
+EverGrandeCity_ChampionsRoom_EventScript_Wallace_Rematch_2::
 	playbgm MUS_ENCOUNTER_CHAMPION, 0
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLACE_REMATCH_2, EverGrandeCity_ChampionsRoom_Text_Defeat

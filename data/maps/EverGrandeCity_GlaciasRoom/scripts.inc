@@ -49,7 +49,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia:: @ 8228469
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_GlaciasRoom_EventScript_Glacia_Rematch_1
+EverGrandeCity_GlaciasRoom_EventScript_Glacia_Rematch_1::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GLACIA_REMATCH_1, EverGrandeCity_GlaciasRoom_Text_Defeat
@@ -57,7 +57,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia_Rematch_1
 	setflag FLAG_DEFEATED_GLACIA_REMATCH_1
 	end
 
-EverGrandeCity_GlaciasRoom_EventScript_Glacia_Rematch_2
+EverGrandeCity_GlaciasRoom_EventScript_Glacia_Rematch_2::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GLACIA_REMATCH_2, EverGrandeCity_GlaciasRoom_Text_Defeat
