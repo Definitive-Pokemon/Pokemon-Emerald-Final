@@ -1216,21 +1216,21 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_DEFEATED_SIDNEY_REMATCH_1                                0x493
-#define FLAG_DEFEATED_PHOEBE_REMATCH_1                                0x494
-#define FLAG_DEFEATED_GLACIA_REMATCH_1                                0x495
-#define FLAG_DEFEATED_DRAKE_REMATCH_1                                 0x496
-#define FLAG_DEFEATED_WALLACE_REMATCH_1                            0x497
-#define FLAG_DEFEATED_SIDNEY_REMATCH_2                                0x498
-#define FLAG_DEFEATED_PHOEBE_REMATCH_2                                0x499
-#define FLAG_DEFEATED_GLACIA_REMATCH_2                                0x49A
-#define FLAG_DEFEATED_DRAKE_REMATCH_2                                 0x49B
-#define FLAG_DEFEATED_WALLACE_REMATCH_2                             0x49C
-#define FLAG_DEFEATED_SIDNEY_REMATCH_3                                0x49D
-#define FLAG_DEFEATED_PHOEBE_REMATCH_3                                0x49E
-#define FLAG_DEFEATED_GLACIA_REMATCH_3                                0x49F
-#define FLAG_DEFEATED_DRAKE_REMATCH_3                                 0x4A0
-#define FLAG_DEFEATED_WALLACE_REMATCH_3                            0x4A1
+#define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
+#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
+#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
+#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
+#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
+#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
+#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
+#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
+#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
+#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
+#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
+#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
+#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
+#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
+#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag

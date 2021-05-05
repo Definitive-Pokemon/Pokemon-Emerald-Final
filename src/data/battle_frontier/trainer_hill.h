@@ -5266,7 +5266,7 @@ static const struct TrHillFloor sDataTagExpert_Floors[] = {
                     [0] =
                         {
                             .name = _("NORA"),
-                            .facilityClass = FACILITY_CLASS_PKMN_RANGER_F,
+                            .facilityClass = FACILITY_CLASS_SALON_MAIDEN,
                             .unused = 0,
                             .speechBefore = {EC_WORD_WAAAH, EC_WORD_THIS, EC_WORD_IS, EC_WORD_SO, EC_WORD_EXCITING, EC_WORD_EXCL},
                             .speechWin = {EC_WORD_WAAAH, EC_WORD_I_AM, EC_WORD_SO, EC_WORD_HAPPY, EC_WORD_I, EC_WORD_WON},
@@ -5407,7 +5407,7 @@ static const struct TrHillFloor sDataTagExpert_Floors[] = {
                     [1] =
                         {
                             .name = _("GAV"),
-                            .facilityClass = FACILITY_CLASS_PKMN_RANGER_M,
+                            .facilityClass = FACILITY_CLASS_DOME_ACE,
                             .unused = 0,
                             .speechBefore = {EC_WORD_WAHAHAHA, EC_WORD_YOU, EC_WORD_CAN_T, EC_WORD_STOP, EC_WORD_ME, EC_WORD_EXCL},
                             .speechWin = {EC_WORD_WOWEE, EC_WORD_EXCL, EC_EMPTY_WORD, EC_WORD_I_AM, EC_WORD_AWESOME, EC_WORD_COOL},
